@@ -2,8 +2,11 @@
 tareas primarias (copiadas del documento de Germand Doc proyecto gestor portfolios)
 1. Planificación
 	-Definición de tareas:
-		-esquema de dependencias de angular
-		-Maquetación implementacion de material Angular.
+		-esquema de dependencias de angular. Hecho
+		-copiar código de los componentes alta, baja y lista. hecho
+		-crear componente nav y footer.
+		-Maquetación de las vistas con Bootstrap.
+		-Crear servicio pasar de una vista a otra.(Rooting de angular)para cpoger las rutas.
 2.Diseño 
 3.Analisis 
 4.Programacion.
