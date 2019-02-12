@@ -1,3 +1,8 @@
 <p>
   form-baja works! Este componente depende del app-contenedor
 </p>
+<h2>Formulario de baja:</h2>
+<p>Nombre:
+  <input type="text" placeholder="Introduzca el nombre" [(ngModel)]="nombreIntroducido" />
+  <input type="button" (click)="darDeBaja()" value="Eliminar" />
+</p>
