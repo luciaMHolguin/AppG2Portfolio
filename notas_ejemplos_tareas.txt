@@ -10,3 +10,13 @@ tareas primarias (copiadas del documento de Germand Doc proyecto gestor portfoli
 2.Diseño 
 3.Analisis 
 4.Programacion.
+
+Listo:
+
+Pendiente:
+ - Rooting
+ - enlazar html, funcionalidad, enlace variables, ng for, modules,
+ - maquetar CSS
+ - local storage --> implementar en angular
+  	Función Stringify
+
