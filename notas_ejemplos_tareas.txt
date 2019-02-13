@@ -11,6 +11,11 @@ Tareas primarias (copiadas del documento de Germand Doc proyecto gestor portfoli
 3.Analisis 
 4.Programacion.
 
+---
+Angular 2 routing tutorial español:
+https://academia-binaria.com/paginas-y-rutas-angular-spa/
+-----
+
 Listo:
 
 Pendiente:
