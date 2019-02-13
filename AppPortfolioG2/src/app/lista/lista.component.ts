@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-
+import { PortfolioService } from "app/portfolio.service";
+import { Portfolio } from "app/portfolio";
 @Component({
   selector: "app-lista",
   templateUrl: "./lista.component.html",

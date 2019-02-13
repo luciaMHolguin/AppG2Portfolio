@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { PortfolioService } from "app/portfolio.service";
 
 @Component({
   selector: "app-form-alta",

@@ -9,6 +9,7 @@ import { FormAltaComponent } from "./form-alta/form-alta.component";
 import { FormBajaComponent } from "./form-baja/form-baja.component";
 import { ListaComponent } from "./lista/lista.component";
 import { PortfolioService } from "./portfolio.service";
+import { NavComponent } from './app-contenedor/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PortfolioService } from "./portfolio.service";
     AppContenedorComponent,
     FormAltaComponent,
     FormBajaComponent,
-    ListaComponent
+    ListaComponent,
+    NavComponent
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [PortfolioService],

@@ -23,5 +23,5 @@ Pendiente:
  - Footer
 
  - Componente Inicio (prioritario)
- - Componente Galería (prioritario)
+ - Componente Galería (prioritario)(Lucía)
  - Componente Categorías
