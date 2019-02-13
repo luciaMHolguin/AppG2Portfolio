@@ -1,0 +1,118 @@
+.navbar{
+	position: fixed !important;
+	width: 100%;
+	z-index: 99;
+	box-shadow: 0px -2px 32px -4px rgba(0,0,0,0.7);
+}
+
+.navbar-brand{
+	color: white !important;
+	font-family: 'Oleo Script', cursive !important;
+}
+
+.navbar i{
+	margin: 0 0.4rem;
+}
+
+.btn-outline-success{
+	color: white !important;
+	border-color: gray !important;
+}
+
+
+.dropdown-menu{
+	background-color: #212529 !important;
+}
+
+.dropdown-menu:hover{
+	background-color: #212529 !important;
+}
+
+.dropdown-item:hover{
+	background-color: #9D9D9D !important;
+}
+
+.card{
+max-width: 25rem;
+margin: 0 auto;
+background-color: #212529;
+border-color: #212529 !important;
+color: white;
+}
+
+.div_listadocate{
+text-align: center;
+margin: 0 auto;
+}
+
+.minicard{
+	position: relative;
+	display: inline-block;
+	max-width: 10rem;
+	margin: 1rem;
+	
+}
+
+
+
+
+.minicardimg{
+	width: 10rem;
+   border-radius:30rem;
+}
+
+
+.card-body{
+background-color: #212529;
+}
+
+.cardboton{
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+.btn-outline-success{
+	background-color: #006064 !important;
+}
+
+a{
+	text-decoration: none !important;
+	color:white !important;
+}
+
+
+
+body{
+	background-color: #84bbd8 !important;
+
+}
+
+.container{
+  	background-color: #4f788e !important;
+  	max-width: 60rem !important;
+  	padding: 3rem !important;
+  	
+}
+
+.pie{
+	background-color: #212529;
+	width: 100%;
+	height: 2rem; 
+	color: gray;
+	font-size: 0.8rem;
+	text-align: center;
+	padding: 2rem;
+}
+
+h1, h2, h3{
+	text-align: center;
+	margin: 1.5rem !important;
+	font-family: 'Oleo Script', cursive !important;
+}
