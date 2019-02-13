@@ -5,25 +5,13 @@
   {{ titulo }}
 </h2>
 {{ etiqueta_nombre }}:
-<input
-  type="text"
-  [placeholder]="placeholder_nombre"
-  [(ngModel)]="nombreIntroducido"
-/>
+<input type="text" [placeholder]="placeholder_nombre" [(ngModel)]="nombreIntroducido" />
 <br />
 Descripción:
-<input
-  type="text"
-  placeholder="Introduzca tu Descripción"
-  [(ngModel)]="descripcionIntroducida"
-/>
+<input type="text" placeholder="Introduzca tu Descripción" [(ngModel)]="descripcionIntroducida" />
 <br />
 Fichero:
-<input
-  type="text"
-  placeholder="Introduzca el fichero"
-  [(ngModel)]="ficheroIntroducido"
-/>
+<input type="text" placeholder="Introduzca el fichero" [(ngModel)]="ficheroIntroducido" />
 <br />
 <input type="button" value="Limpiar" (click)="limpiar()" />
 <input type="button" value="Añadir" (click)="darDeAlta()" />
@@ -35,46 +23,46 @@ Fichero:
 
 <section>
   <h1>Editor de Portfolio</h1>
-  
-  
+
+
   <div id="div_form">
-  
-  <form role="form">
-  <div class="form-group row">
-  <div class="col-sm-2"> </div>
-  <label for="nombre" class="col-sm-2 col-12  col-form-label">Nombre:</label>
-  <div class="col-sm-6">
-  <input type="text" id="nombre" required="true" placeholder="Nombre y apellidos" class="form-control" />
+
+    <form role="form">
+      <div class="form-group row">
+        <div class="col-sm-2"> </div>
+        <label for="nombre" class="col-sm-2 col-12  col-form-label">Nombre:</label>
+        <div class="col-sm-6">
+          <input type="text" id="nombre" required="true" placeholder="Nombre y apellidos" class="form-control" />
+        </div>
+        <div class="col-sm-2"> </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-2"> </div>
+        <label for="nombre" class="col-sm-2 col-12  col-form-label">Descripción:</label>
+        <div class="col-sm-6">
+          <textarea id="descripcion" class="form-control" placeholder="Descripción"></textarea>
+        </div>
+        <div class="col-sm-2"> </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-2"> </div>
+        <label for="nombre" class="col-sm-2 col-12  col-form-label">Documento:</label>
+        <div class="col-sm-6">
+          <input type="text" id="nombre_fichero" required="true" placeholder="Introducir nombre de archivo sin extensión"
+            class="form-control" />
+        </div>
+        <div class="col-sm-2"> </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-2"> </div>
+        <input id="altaPortfolio" type="submit" value="AÑADIR" class="btn btn-success col-sm-4" />
+        <input id="eliminarPortfolio" type="submit" value="ELIMINAR" class="btn btn-danger col-sm-4" />
+        <div class="col-sm-2"> </div>
+      </div>
+    </form>
   </div>
-  <div class="col-sm-2"> </div>
-  </div>
-  <div class="form-group row">
-  <div class="col-sm-2"> </div>
-  <label for="nombre" class="col-sm-2 col-12  col-form-label">Descripción:</label>
-  <div class="col-sm-6">
-  <textarea id="descripcion" class="form-control" placeholder="Descripción" /></textarea>
-  </div>
-  <div class="col-sm-2"> </div>
-  </div>
-  <div class="form-group row">
-  <div class="col-sm-2"> </div>
-  <label for="nombre" class="col-sm-2 col-12  col-form-label">Documento:</label>
-  <div class="col-sm-6">
-  <input type="text" id="nombre_fichero" required="true" placeholder="Introducir nombre de archivo sin extensión"
-  class="form-control" />
-  </div>
-  <div class="col-sm-2"> </div>
-  </div>
-  <div class="form-group row">
-  <div class="col-sm-2"> </div>
-  <input id="altaPortfolio" type="submit" value="AÑADIR" class="btn btn-success col-sm-4" />
-  <input id="eliminarPortfolio" type="submit" value="ELIMINAR" class="btn btn-danger col-sm-4" />
-  <div class="col-sm-2"> </div>
-  </div>
-  </form>
-  </div>
-  
-  
-  
-  
-  </section>
+
+
+
+
+</section>

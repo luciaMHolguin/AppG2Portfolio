@@ -1,18 +1,13 @@
 import { Component, OnInit } from "@angular/core";
-<<<<<<< HEAD
-import { PortfolioService } from "app/portfolio.service";
-=======
-import { PortfolioService } from "../portfolio.service";
-import { Portfolio } from "../portfolio";
 
->>>>>>> 82be2286efd628b05509e8890d3fd6b5697cd4cc
+import { PortfolioService } from "app/portfolio.service";
+
 @Component({
   selector: "app-form-alta",
   templateUrl: "./form-alta.component.html",
   styleUrls: ["./form-alta.component.css"]
 })
 export class FormAltaComponent implements OnInit {
-  ng;
   titulo: string;
   etiqueta_nombre: string;
   placeholder_nombre: string;
