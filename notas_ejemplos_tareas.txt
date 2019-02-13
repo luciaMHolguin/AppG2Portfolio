@@ -1,5 +1,5 @@
 
-tareas primarias (copiadas del documento de Germand Doc proyecto gestor portfolios)
+Tareas primarias (copiadas del documento de Germand Doc proyecto gestor portfolios)
 1. Planificación
 	-Definición de tareas:
 		-esquema de dependencias de angular. Hecho
@@ -19,4 +19,9 @@ Pendiente:
  - maquetar CSS
  - local storage --> implementar en angular
   	Función Stringify
+ - Menú navegador
+ - Footer
 
+ - Componente Inicio (prioritario)
+ - Componente Galería (prioritario)
+ - Componente Categorías
