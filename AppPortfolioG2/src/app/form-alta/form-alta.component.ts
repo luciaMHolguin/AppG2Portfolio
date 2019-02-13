@@ -1,8 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-<<<<<<< HEAD
-
-=======
->>>>>>> 46367ea4adb77629cd69baeabb4959dd1c27c188
 import { PortfolioService } from "app/portfolio.service";
 
 @Component({

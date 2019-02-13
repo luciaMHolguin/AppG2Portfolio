@@ -9,12 +9,17 @@ import { FormAltaComponent } from "./form-alta/form-alta.component";
 import { FormBajaComponent } from "./form-baja/form-baja.component";
 import { ListaComponent } from "./lista/lista.component";
 import { PortfolioService } from "./portfolio.service";
-<<<<<<< HEAD
-import { GaleriaCompComponent } from './galeria-comp/galeria-comp.component';
-=======
-import { NavComponent } from './app-contenedor/nav/nav.component';
-import { InicioComponent } from './inicio/inicio.component';
->>>>>>> 46367ea4adb77629cd69baeabb4959dd1c27c188
+import { GaleriaCompComponent } from "./galeria-comp/galeria-comp.component";
+import { NavComponent } from "./app-contenedor/nav/nav.component";
+import { InicioComponent } from "./inicio/inicio.component";
+import { RouterModule, Routes } from "@angular/router";
+
+const appRoutes: Routes = [
+  { path: "", component: InicioComponent },
+  { path: "verportfolios", component: ListaComponent },
+  { path: "galeria", component: GaleriaCompComponent },
+  { path: "editor", component: FormAltaComponent }
+];
 
 @NgModule({
   declarations: [
@@ -23,14 +28,19 @@ import { InicioComponent } from './inicio/inicio.component';
     FormAltaComponent,
     FormBajaComponent,
     ListaComponent,
-<<<<<<< HEAD
-    GaleriaCompComponent
-=======
+    GaleriaCompComponent,
     NavComponent,
     InicioComponent
->>>>>>> 46367ea4adb77629cd69baeabb4959dd1c27c188
   ],
-  imports: [BrowserModule, FormsModule, HttpModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
+  ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
