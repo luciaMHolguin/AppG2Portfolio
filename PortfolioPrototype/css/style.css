@@ -109,7 +109,7 @@ body{
 	font-size: 0.8rem;
 	text-align: center;
 	padding: 2rem;
-	margin-top: 30em;
+	margin-top: 20%;
 	position: flex;
 }
 
@@ -150,6 +150,7 @@ h1, h2, h3{
 }
 
 .pie li a:hover {
+  
   background-color: #111111;
 }
 

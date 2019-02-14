@@ -19,6 +19,7 @@ const appRoutes: Routes = [
   { path: "", component: InicioComponent },
   { path: "verportfolios", component: ListaComponent },
   { path: "galeria", component: GaleriaCompComponent },
+  { path: "categorias", component: CategoriaComponent },
   { path: "editor", component: FormAltaComponent }
 ];
 
