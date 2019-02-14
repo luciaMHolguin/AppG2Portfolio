@@ -8,7 +8,15 @@ export class Portfolio {
       throw new Error("Nombre no puede ser vacío");
     }
   }
-  public getNombre(): string {
-    return this.nombre;
-  }
+public getNombre(): string {
+return this.nombre;
+}
+
+public getDesc(): string {
+return this.descripcion;
+}
+
+public getUrl(): string {
+return this.fichero;
+}
 }
