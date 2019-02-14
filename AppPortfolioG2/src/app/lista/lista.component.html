@@ -24,10 +24,10 @@
         </tr>
       </thead>
       <tbody id="tbody_lista_cvs">
-        <tr>
-          <td>Ana</td>
-          <td>Desarrolladora Front-End maquetadora y programadora</td>
-          <td><a href="ejemplo_cv_1.html">Ver CV</a></td>
+        <tr *ngFor="let unPortfolio of arrayPortfolios">
+          <td>{{ unPortfolio.getNombre() }}</td>
+          <td>{{ unPortfolio.getDesc() }}</td>
+          <td><a href="{{ unPortfolio.getUrl() }}">Ver CV</a></td>
         </tr>
         <tr>
           <td>Rubén González</td>
@@ -39,92 +39,6 @@
   </div>
 </section>
 
-<section>
-  <h1>Portfolio detallado</h1>
-
-  <div id="div_listado1en1">
-
-    <div class="card">
-      <img class="card-img-top" src="images/img_avatar1.png" alt="Card image">
-      <div class="card-body">
-        <h4 class="card-title">John Doe</h4>
-        <p class="card-text">Some example text.</p>
-        <a href="#" class="cardboton btn btn-primary">See Profile</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h1>Categorías</h1>
-
-
-  <div class="div_listadocate">
-
-
-    <h3>Programación</h3>
-
-    <div class="minicard">
-      <a href="#"><img class="minicardimg" src="images/img_avatar1.png"></a>
-      <div class="minicardtext">John Doe</div>
-    </div>
-
-
-    <div class="minicard">
-      <a href="#"><img class="minicardimg" src="images/img_avatar1.png"></a>
-      <div class="minicardtext">John Doe</div>
-    </div>
-
-    <div class="minicard">
-      <a href="#"><img class="minicardimg" src="images/img_avatar1.png"></a>
-      <div class="minicardtext">John Doe</div>
-    </div>
-    <h3>Maquetación Web</h3>
-
-    <div class="minicard">
-      <a href="#"><img class="minicardimg" src="images/img_avatar1.png"></a>
-      <div class="minicardtext">John Doe</div>
-    </div>
-
-    <div class="minicard">
-      <a href="#"><img class="minicardimg" src="images/img_avatar1.png"></a>
-      <div class="minicardtext">John Doe</div>
-    </div>
-    <h3>Ilustración</h3>
-
-    <div class="minicard">
-      <a href="#"><img class="minicardimg" src="images/img_avatar1.png"></a>
-      <div class="minicardtext">John Doe</div>
-    </div>
-
-
-    <div class="minicard">
-      <a href="#"><img class="minicardimg" src="images/img_avatar1.png"></a>
-      <div class="minicardtext">John Doe</div>
-    </div>
-
-    <div class="minicard">
-      <a href="#"><img class="minicardimg" src="images/img_avatar1.png"></a>
-      <div class="minicardtext">John Doe</div>
-    </div>
-    <h3>Fotografía</h3>
-    <div class="minicard">
-      <a href="#"><img class="minicardimg" src="images/img_avatar1.png"></a>
-      <div class="minicardtext">John Doe</div>
-    </div>
-
-    <div class="minicard">
-      <a href="#"><img class="minicardimg" src="images/img_avatar1.png"></a>
-      <div class="minicardtext">John Doe</div>
-    </div>
-
-    <div class="minicard">
-      <a href="#"><img class="minicardimg" src="images/img_avatar1.png"></a>
-      <div class="minicardtext">John Doe</div>
-    </div>
 
 
 
-
-  </div>
-</section>
