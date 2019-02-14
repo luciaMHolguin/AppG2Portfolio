@@ -1,17 +1,4 @@
-<h2>Lista portfolios</h2>
-<ul>
-  <!-- Unorderer List-->
-  <li *ngFor="let unPortfolio of arrayPortfolios">
-    El portfolio {{ unPortfolio.nombre }}
-  </li>
-  <li *ngFor="let unPortfolio of arrayPortfolios">
-    la descripcion {{unPortfolio.descripcion}}
-  </li>
-  <li *ngFor="let unPortfolio of arrayPortfolios">
-    El fichero {{unPortfolio.fichero}}
-  </li>
-</ul>
-<input type="button" (click)="actualizar()" value="actualizar" />
+<!--<input type="button" (click)="actualizar()" value="actualizar" />-->
 
 
 
@@ -31,9 +18,10 @@
       </thead>
       <tbody id="tbody_lista_cvs">
         <tr *ngFor="let unPortfolio of arrayPortfolios">
-          <td>{{ unPortfolio.getNombre() }}</td>
-          <td>{{ unPortfolio.getDesc() }}</td>
-          <td><a href="{{ unPortfolio.getUrl() }}">Ver CV</a></td>
+          <td>{{ unPortfolio.nombre}}</td>
+          <td>{{ unPortfolio.descripcion}}</td>
+
+          <td><a href="{{ unPortfolio.fichero}}">Ver CV</a></td>
         </tr>
         <tr>
           <td>Rubén González</td>
@@ -44,7 +32,3 @@
     </table>
   </div>
 </section>
-
-
-
-
