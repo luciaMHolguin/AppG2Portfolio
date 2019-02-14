@@ -13,6 +13,7 @@ import { GaleriaCompComponent } from "./galeria-comp/galeria-comp.component";
 import { NavComponent } from "./app-contenedor/nav/nav.component";
 import { InicioComponent } from "./inicio/inicio.component";
 import { RouterModule, Routes } from "@angular/router";
+import { CategoriaComponent } from './categoria/categoria.component';
 
 const appRoutes: Routes = [
   { path: "", component: InicioComponent },
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     ListaComponent,
     GaleriaCompComponent,
     NavComponent,
-    InicioComponent
+    InicioComponent,
+    CategoriaComponent
   ],
   imports: [
     BrowserModule,
