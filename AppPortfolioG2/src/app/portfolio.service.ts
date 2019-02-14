@@ -31,6 +31,7 @@ export class PortfolioService {
     let nuevoPortfolio: Portfolio;
     nuevoPortfolio = new Portfolio(nombre, desc, fich);
     this.lista.push(nuevoPortfolio);
+    this.guardarEnLocal();
     console.log("<<< ALTA PORTFOLIO: " + nombre + " >>>");
   }
   public baja(nombre: string) {
