@@ -2,7 +2,13 @@
 <ul>
   <!-- Unorderer List-->
   <li *ngFor="let unPortfolio of arrayPortfolios">
-    El portfolio {{ unPortfolio.getNombre() }}
+    El portfolio {{ unPortfolio.nombre }}
+  </li>
+  <li *ngFor="let unPortfolio of arrayPortfolios">
+    la descripcion {{unPortfolio.descripcion}}
+  </li>
+  <li *ngFor="let unPortfolio of arrayPortfolios">
+    El fichero {{unPortfolio.fichero}}
   </li>
 </ul>
 <input type="button" (click)="actualizar()" value="actualizar" />

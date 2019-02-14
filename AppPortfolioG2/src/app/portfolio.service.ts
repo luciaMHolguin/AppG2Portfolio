@@ -19,7 +19,7 @@ export class PortfolioService {
       // para ver el uso del almacenatmiento local: https://www.w3schools.com/HTML/html5_webstorage.asp
 
       this.posActual = 0;
-      if (this.ls.getItem("portfolios") == null) {
+      if (this.ls.getItem("portfolio") == null) {
         this.lista = [];
         this.guardarEnLocal();
       } else {
@@ -42,8 +42,28 @@ export class PortfolioService {
   }
   public guardarEnLocal() {
     var arrayEnTexto = JSON.stringify(this.lista);
-    this.ls.setItem("portfolios", arrayEnTexto); //array ls es el local storage
+    this.ls.setItem("portfolio", arrayEnTexto); //array ls es el local storage
   }
-  public cargarDesdeLocalStorage() {}
+  public cargarDesdeLocalStorage() {
+    var arrayEnTexto = this.ls.getItem("portfolio");
+    this.lista = JSON.parse(arrayEnTexto);
+    // Este array lo convertimos en un array de obj Portfolio
+    for (var i = 0; i < this.lista.length; i++) {
+      this.lista[i] = new Portfolio(
+        this.lista[i].nombre,
+        this.lista[i].descripcion,
+        this.lista[i].fichero
+      );
+    }
+  }
+  eliminar(nombre: string) {
+    // Ver uso de método splice: https://www.w3schools.com/jsref/jsref_splice.asp
+    for (var i = 0; i < this.lista.length; i++) {
+      if (this.lista[i].nombre == nombre) {
+        this.lista.splice(i, 1);
+      }
+    }
+    this.guardarEnLocal();
+  }
   public mostrarGaleria() {}
 }

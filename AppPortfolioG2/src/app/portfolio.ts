@@ -1,8 +1,8 @@
 export class Portfolio {
   constructor(
-    private nombre: string,
-    private descripcion: string,
-    private fichero: string
+    public nombre: string,
+    public descripcion: string,
+    public fichero: string
   ) {
     if (this.nombre == "") {
       throw new Error("Nombre no puede ser vacío");
