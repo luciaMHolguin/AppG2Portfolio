@@ -110,10 +110,51 @@ body{
 	text-align: center;
 	padding: 2rem;
 	margin-top: 30em;
+	position: flex;
 }
 
 h1, h2, h3{
 	text-align: center;
 	margin: 1.5rem !important;
 	font-family: 'Oleo Script', cursive !important;
+	justify-items: center;
+}
+
+.redes {
+	display: inline;
+	
+	list-style: none;
+}
+.redes li {
+	display: inline;
+	
+	
+.redes ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.pie li {
+  float: left;
+}
+
+.pie li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.pie li a:hover {
+  background-color: #111111;
+}
+
+	
+
+
+
 }
